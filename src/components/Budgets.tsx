@@ -2240,8 +2240,8 @@ const Budgets = () => {
         <button 
           className="text-white px-3 lg:px-4 py-2 rounded-lg text-xs lg:text-sm font-medium transition-colors"
           style={{ backgroundColor: 'rgb(34 197 94)' }}
-          onMouseEnter={(e) => e.target.style.backgroundColor = 'rgb(30 180 85)'}
-          onMouseLeave={(e) => e.target.style.backgroundColor = 'rgb(34 197 94)'}
+          onMouseEnter={(e) => (e.target as HTMLElement).style.backgroundColor = 'rgb(30 180 85)'}
+          onMouseLeave={(e) => (e.target as HTMLElement).style.backgroundColor = 'rgb(34 197 94)'}
         >
           Salvar Relatório Personalizado
         </button>
@@ -2355,8 +2355,8 @@ const Budgets = () => {
                   onClick={handleSaveMeta}
                   className="text-white text-sm px-4 py-2 rounded-md font-semibold transition-colors w-full sm:w-auto"
                   style={{ backgroundColor: 'rgb(34 197 94)' }}
-                  onMouseEnter={(e) => e.target.style.backgroundColor = 'rgb(30 180 85)'}
-                  onMouseLeave={(e) => e.target.style.backgroundColor = 'rgb(34 197 94)'}
+                  onMouseEnter={(e) => (e.target as HTMLElement).style.backgroundColor = 'rgb(30 180 85)'}
+                  onMouseLeave={(e) => (e.target as HTMLElement).style.backgroundColor = 'rgb(34 197 94)'}
                 >
                   Salvar
                 </button>
@@ -2694,12 +2694,12 @@ const Budgets = () => {
                   borderColor: 'rgb(34 197 94)' 
                 }}
                 onMouseEnter={(e) => {
-                  e.target.style.backgroundColor = 'rgb(30 180 85)';
-                  e.target.style.borderColor = 'rgb(30 180 85)';
+                  (e.target as HTMLElement).style.backgroundColor = 'rgb(30 180 85)';
+                  (e.target as HTMLElement).style.borderColor = 'rgb(30 180 85)';
                 }}
                 onMouseLeave={(e) => {
-                  e.target.style.backgroundColor = 'rgb(34 197 94)';
-                  e.target.style.borderColor = 'rgb(34 197 94)';
+                  (e.target as HTMLElement).style.backgroundColor = 'rgb(34 197 94)';
+                  (e.target as HTMLElement).style.borderColor = 'rgb(34 197 94)';
                 }}
               >
                 <span>✅</span>
