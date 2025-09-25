@@ -1,0 +1,5 @@
+# Redirecionamentos para SPA (Single Page Application)
+# Todas as rotas devem ser redirecionadas para index.html
+# para que o React Router funcione corretamente
+
+/*    /index.html   200

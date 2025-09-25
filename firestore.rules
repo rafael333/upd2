@@ -1,0 +1,33 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Regras para transações
+    match /transactions/{transactionId} {
+      allow read, write: if request.auth != null;
+    }
+    
+    // Regras para categorias
+    match /categories/{categoryId} {
+      allow read, write: if request.auth != null;
+    }
+    
+    // Regras para usuários
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // Regras para configurações
+    match /settings/{settingId} {
+      allow read, write: if request.auth != null;
+    }
+    
+    // Regras para configurações do usuário
+    match /userSettings/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+  }
+}
+
+
+
+

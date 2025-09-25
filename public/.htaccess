@@ -1,0 +1,7 @@
+# Desabilitar Service Workers
+Header set Service-Worker-Allowed "none"
+Header set Cache-Control "no-cache, no-store, must-revalidate"
+Header set Pragma "no-cache"
+Header set Expires "0"
+
+

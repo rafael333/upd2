@@ -1,0 +1,56 @@
+{
+  "name": "fintrack-dashboard",
+  "version": "1.0.0",
+  "description": "Dashboard Financeiro FinTrack - Aplicativo Web e Mobile",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx vite",
+    "build": "npx tsc && npx vite build",
+    "build:prod": "npx tsc && npx vite build --mode production",
+    "build:netlify": "npm run clean && npm run build:prod",
+    "build:netlify-simple": "npm install && npx tsc && npx vite build --mode production",
+    "preview": "npx vite preview",
+    "lint": "npx eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "clean": "npx rimraf dist node_modules/.vite"
+  },
+  "dependencies": {
+    "@emoji-mart/data": "^1.2.1",
+    "@emoji-mart/react": "^1.1.1",
+    "@vitejs/plugin-react": "^4.1.0",
+    "autoprefixer": "^10.4.16",
+    "d3": "^7.9.0",
+    "firebase": "^12.2.1",
+    "lottie-react": "^2.4.1",
+    "lucide-react": "^0.294.0",
+    "postcss": "^8.4.31",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "recharts": "^2.8.0",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.2.2",
+    "vite": "^7.1.5"
+  },
+  "devDependencies": {
+    "@types/d3": "^7.4.3",
+    "@types/node": "^20.10.0",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "eslint": "^8.53.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.4",
+    "rimraf": "^5.0.5",
+    "terser": "^5.24.0"
+  },
+  "keywords": [
+    "finanças",
+    "dashboard",
+    "react",
+    "typescript",
+    "mobile"
+  ],
+  "author": "FinTrack Team",
+  "license": "MIT"
+}
