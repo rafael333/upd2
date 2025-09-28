@@ -279,7 +279,6 @@ export function AreaChartSemiFilled() {
                   <div className="grid grid-cols-2 gap-4">
                     <div className="text-center p-4 bg-gradient-to-br from-green-50 to-green-100 rounded-xl border border-green-200">
                       <div className="flex items-center justify-center space-x-2 mb-2">
-                        <span className="text-green-600 text-lg">💰</span>
                         <span className="text-sm font-semibold text-green-700">Receitas</span>
                       </div>
                       <div className="text-lg font-bold text-green-600">
@@ -288,7 +287,6 @@ export function AreaChartSemiFilled() {
                     </div>
                     <div className="text-center p-4 bg-gradient-to-br from-red-50 to-red-100 rounded-xl border border-red-200">
                       <div className="flex items-center justify-center space-x-2 mb-2">
-                        <span className="text-red-600 text-lg">💸</span>
                         <span className="text-sm font-semibold text-red-700">Despesas</span>
                       </div>
                       <div className="text-lg font-bold text-red-600">
@@ -696,7 +694,6 @@ export function AreaChartSemiFilled() {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="text-center p-4 bg-gradient-to-br from-green-50 to-green-100 rounded-xl border border-green-200">
                     <div className="flex items-center justify-center space-x-2 mb-2">
-                      <span className="text-green-600 text-lg">💰</span>
                       <span className="text-sm font-semibold text-green-700">Receitas</span>
                     </div>
                     <div className="text-lg font-bold text-green-600">
@@ -705,7 +702,6 @@ export function AreaChartSemiFilled() {
                   </div>
                   <div className="text-center p-4 bg-gradient-to-br from-red-50 to-red-100 rounded-xl border border-red-200">
                     <div className="flex items-center justify-center space-x-2 mb-2">
-                      <span className="text-red-600 text-lg">💸</span>
                       <span className="text-sm font-semibold text-red-700">Despesas</span>
                     </div>
                     <div className="text-lg font-bold text-red-600">
@@ -1711,14 +1707,12 @@ const Budgets = () => {
                       <div className="grid grid-cols-2 gap-3">
                         <div className="text-center p-3 bg-gray-50 rounded-lg">
                           <div className="flex items-center justify-center space-x-1 mb-1">
-                            <span className="text-green-600 text-sm">💰</span>
                             <span className="text-xs font-medium text-gray-600">Receitas</span>
                           </div>
                           <div className="text-sm font-semibold text-green-600">R$ {item.receitas.toFixed(2).replace('.', ',')}</div>
                         </div>
                         <div className="text-center p-3 bg-gray-50 rounded-lg">
                           <div className="flex items-center justify-center space-x-1 mb-1">
-                            <span className="text-red-600 text-sm">💸</span>
                             <span className="text-xs font-medium text-gray-600">Despesas</span>
                           </div>
                           <div className="text-sm font-semibold text-red-600">R$ {item.despesas.toFixed(2).replace('.', ',')}</div>

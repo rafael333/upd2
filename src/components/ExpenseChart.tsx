@@ -172,7 +172,7 @@ const ExpenseChart = () => {
                 color: activeFilter === 'receita-vs-despesa' ? 'white' : undefined
               }}
             >
-              📊 Receita vs Despesa
+              Receita vs Despesa
             </button>
             <button
               onClick={() => setActiveFilter('receita')}
@@ -186,7 +186,7 @@ const ExpenseChart = () => {
                 color: activeFilter === 'receita' ? 'white' : undefined
               }}
             >
-              💰 Receita
+              Receita
             </button>
             <button
               onClick={() => setActiveFilter('despesa')}
@@ -200,7 +200,7 @@ const ExpenseChart = () => {
                 color: activeFilter === 'despesa' ? 'white' : undefined
               }}
             >
-              💸 Despesa
+              Despesa
             </button>
           </div>
         </div>

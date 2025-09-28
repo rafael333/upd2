@@ -217,7 +217,7 @@ const Sidebar = ({ activeTab, onTabChange }: SidebarProps) => {
             
             <button 
               onClick={() => handleTabChange('admin')}
-              className={`flex flex-col items-center space-y-1 px-3 py-2 rounded-lg transition-colors ${
+              className={`hidden lg:flex flex-col items-center space-y-1 px-3 py-2 rounded-lg transition-colors ${
                 activeTab === 'admin' 
                   ? 'bg-red-50 text-red-700' 
                   : 'text-gray-600 hover:bg-gray-50'
